@@ -1,9 +1,11 @@
-package com.natli.springboot.template.course;
+package com.natli.springboot.template.course.jdbc;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
+
+import com.natli.springboot.template.course.Course;
 
 @Repository
 public class CourseJdbcRepository {

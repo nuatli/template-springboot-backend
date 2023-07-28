@@ -1,12 +1,19 @@
 package com.natli.springboot.template.course;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
 
 //Constructor
 //Getters & Setters
 //toString 
+@Entity//(name="Course_Details")
 public class Course {
+	@Id
 	private long id;
+	@Column
 	private String name;
+	@Column
 	private String author;
 	
 	public Course() {}
